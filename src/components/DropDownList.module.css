@@ -1,0 +1,69 @@
+.container {
+  margin: 10px;
+  position: relative;
+}
+
+.container .selectBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e2b00;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.container .selectBox .icons {
+  color: white;
+  padding: 5px;
+}
+
+.container .selectBox p {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+}
+
+.container .dropDownMenu {
+  position: absolute;
+  border: 1px solid #4e2b00;
+  background-color: #fff;
+  z-index: 5;
+  border-radius: 10px;
+  margin-top: 5px;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  .container .selectBox .icons {
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .container .selectBox p {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 900px) and (orientation: portrait) {
+  .container .selectBox .icons {
+    padding: 15px;
+    font-size: 30px;
+  }
+
+  .container .selectBox p {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container .selectBox .icons {
+    padding: 8px;
+    font-size: 28px;
+  }
+
+  .container .selectBox p {
+    font-size: 28px;
+  }
+}

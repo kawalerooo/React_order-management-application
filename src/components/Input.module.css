@@ -1,0 +1,40 @@
+.input {
+  position: relative;
+  color: gray;
+  width: 100%;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.input label {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.input .icon {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.input input {
+  border: none;
+  border-bottom: 3px solid #4e2b00;
+  padding: 10px;
+  width: 95%;
+  font-size: 25px;
+  background-color: transparent;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.input input.incorrect {
+  border-bottom: 3px solid red;
+}

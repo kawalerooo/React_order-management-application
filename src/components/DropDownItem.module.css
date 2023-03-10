@@ -1,0 +1,32 @@
+.item {
+  border: 1px solid #b5aa99;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.item p {
+  font-size: 20px;
+  text-align: left;
+  font-weight: normal;
+  padding-left: 10px;
+  margin: 0;
+  padding: 10px;
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  .item p {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 900px) and (orientation: portrait) {
+  .item p {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .item p {
+    font-size: 30px;
+  }
+}

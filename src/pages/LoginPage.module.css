@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container h1 {
+  font-size: 60px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15vh auto;
+  width: 25%;
+  height: 50%;
+}
+
+.container form input[type="submit"] {
+  width: 70%;
+  padding: 12px;
+  border: none;
+  background-color: #4e2b00;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  margin: 0;
+}
+
+form span {
+  color: gray;
+  font-size: 12px;
+  align-self: flex-end;
+  padding: 10px;
+}
+
+.skewed {
+  position: absolute;
+  top: 90vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: #2a91a4;
+  z-index: 0;
+  transform: skewY(6deg);
+  transform-origin: top right;
+}
+
+.signIn {
+  position: absolute;
+  bottom: 10vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 80vw;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signIn span {
+  font-size: 16px;
+  color: white;
+}
+.signIn button {
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.message {
+  font-size: 16px;
+  color: black;
+  text-align: justify;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.277);
+  width: 90%;
+  padding: 15px;
+}
+
+p.errorMessage {
+  font-size: 22px;
+  color: red;
+  font-weight: 200;
+}
+
+@media (min-width: 1900px) {
+  .container form {
+    width: 20%;
+    height: 50%;
+  }
+
+  .container h1 {
+    font-size: 70px;
+  }
+}
+
+.devider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.devider svg {
+  position: relative;
+  display: block;
+  width: calc(281% + 1.3px);
+  height: 229px;
+  transform: rotateY(180deg);
+}
+
+.devider .fill {
+  fill: #007663;
+}

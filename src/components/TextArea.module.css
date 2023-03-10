@@ -1,0 +1,40 @@
+.textarea {
+  position: relative;
+  color: gray;
+  width: 100%;
+  font-size: 25px;
+}
+
+.textarea label {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.textarea .icon {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.textarea textarea {
+  border: none;
+  border-bottom: 3px solid #4e2b00;
+  padding: 10px;
+  width: 95%;
+  height: 15vh;
+  font-size: 25px;
+  background-color: transparent;
+}
+
+.textarea textarea:focus {
+  outline: none;
+}
+
+.textarea textarea.incorrect {
+  border-bottom: 3px solid red;
+}

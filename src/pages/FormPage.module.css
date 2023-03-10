@@ -1,0 +1,40 @@
+.container form {
+  width: 30%;
+  margin: 20px auto;
+}
+
+.container h1 {
+  margin: 30px;
+  font-size: 60px;
+}
+
+.container form input[type="submit"] {
+  border: none;
+  background-color: #4e2b00;
+  padding: 20px;
+  width: 70%;
+  font-size: 30px;
+  color: white;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.container form .DropDownList {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container .error {
+  margin: 0 auto;
+  width: 25vw;
+  padding: 20px;
+  color: red;
+  border: 3px solid red;
+  background-color: rgb(255, 196, 196);
+}
+
+@media (min-width: 1600px) {
+  .container form {
+    width: 25%;
+  }
+}
